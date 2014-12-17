@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+
+<head>
+	<title>Baloon Firework Development page</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Страница разработчиков фейверка шаров" />
+	
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/tools.js"></script>
+	
+
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/js/codemirror.js"></script>
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/js/mode/javascript.js"></script>
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/js/mode/xml.js"></script>
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/js/mode/css.js"></script>
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/js/mode/htmlmixed.js"></script>
+
+	<link rel="stylesheet" href="http://sandbox.defaceit.ru/css/codemirror.css">
+	<link rel="stylesheet" href="http://sandbox.defaceit.ru/css/solarized.css">
+	<link rel="stylesheet" href="http://sandbox.defaceit.ru/defaceit/tools/css/defaceit.css">
+
+
+
+<script id="default_tpl" type="text/x-jquery-tmpl"><!--<script id="{{ action }}_tpl" type="text/x-jquery-tmpl">
+</script>
+
+<script>
+BabyInfo.{{ action }} = function(){
+	throw('You should specify action');
+}
+</script>-->
+</script>
+
+
+</head>
+<body>
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/babyinfo/develop/babyinfo.js"></script>
+	<script>
+	h = Defaceit.Helpers;
+	h.domain('babyinfo.babywonder.ru');
+	h.context('template');
+
+
+	BabyInfoConfig = {
+		userName: 'root'
+	}
+
+_.templateSettings = {
+  interpolate: /\{\{(.+?)\}\}/g
+};
+
+
+	mother = BabyInfo.create('root');
+	</script>
+</body>
+</html>

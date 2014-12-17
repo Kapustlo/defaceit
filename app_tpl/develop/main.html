@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+
+<head>
+	<title>{{appid}} Development page</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<script type="text/javascript" src="{{dev_url}}/defaceit/tools.js"></script>
+	
+
+	<script type="text/javascript" src="{{dev_url}}/js/codemirror.js"></script>
+	<script type="text/javascript" src="{{dev_url}}/js/mode/javascript.js"></script>
+	<script type="text/javascript" src="{{dev_url}}/js/mode/xml.js"></script>
+	<script type="text/javascript" src="{{dev_url}}/js/mode/css.js"></script>
+	<script type="text/javascript" src="{{dev_url}}/js/mode/htmlmixed.js"></script>
+
+	<link rel="stylesheet" href="{{dev_url}}/css/codemirror.css">
+	<link rel="stylesheet" href="{{dev_url}}/css/solarized.css">
+	<link rel="stylesheet" href="{{dev_url}}/defaceit/tools/css/defaceit.css">
+
+	<link rel="stylesheet" href="{{dev_url}}/defaceit/messages/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{dev_url}}/defaceit/messages/bootstrap/css/bootstrap-theme.min.css">
+	<script src="{{dev_url}}/defaceit/messages/bootstrap/js/bootstrap.min.js"></script>
+
+
+<!--Ignore-->
+<script id="default_tpl" type="text/x-jquery-tmpl"><!--<script id="[[ action ]]_tpl" type="text/x-jquery-tmpl">
+<h1>Определите событие {{appid}}.[[ action ]]</h1>
+</script>
+
+<script>
+Defaceit.App.{{appid}}.[[ action ]] = function(){
+	    Defaceit.Window.Manager.create('Simple', {
+              content: jQuery('#[[ action ]]_tpl').html(),
+              geometry:['width:750', 'center', 'show']
+            });
+
+	throw('You should specify action');
+}
+</script>-->
+</script>
+<!--EndIgnore-->
+
+</head>
+<body>
+	<script>
+		Defaceit.Config = Defaceit.Config || {};
+		Defaceit.Config.{{app_class}} = {
+	    	start_action: 'main'
+		};
+	</script>
+<!--Ignore-->
+	<script type="text/javascript" src="{{dev_url}}/defaceit/{{appid}}/develop/{{appid}}.js"></script>
+	<script type="text/javascript" src="{{dev_url}}/defaceit/{{appid}}/develop/develop.js"></script>
+<!--EndIgnore-->
+
+<!--%%
+    <script src="{{open}}{{open}} owner.url {{close}}{{close}}"></script>
+    {% if active_referent %}<script src="{{open}}{{open}} active_referent.url {{close}}{{close}}"></script>{% endif %}
+
+    <script> 
+        window.urls = [{% if referents  %}{% for referent in referents %}"{{open}}{{open}} referent.url {{close}}{{close}}",{% endfor %}{% endif %}]
+    </script>
+%%-->
+</body>
+</html>

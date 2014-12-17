@@ -1,0 +1,20 @@
+{variables, [{appid, "bossapp"},
+	     {open, "\{"},
+	     {close, "\}"},
+	     {theme, "main"},
+	     {dev_url, "http://sandbox.defaceit.ru"},
+	     {app_class, "{{appid}}"},
+             {src, "."},
+             {defaceit_src, "{{src}}/priv/static/defaceit"},
+             {dest, "{{defaceit_src}}/{{appid}}"}]}.
+{dir, "{{dest}}"}.
+{dir, "{{dest}}/develop"}.
+{dir, "{{dest}}/css"}.
+{dir, "{{dest}}/lib"}.
+{dir, "{{dest}}/templates"}.
+{template, "app_tpl/compile.sh", "{{dest}}/compile.sh"}.
+{template, "app_tpl/develop/{{theme}}.html", "{{dest}}/develop/main.html"}.
+{template, "app_tpl/develop/app.js", "{{dest}}/develop/{{appid}}.js"}.
+{template, "app_tpl/css/app.css", "{{dest}}/css/{{appid}}.css"}.
+{template, "app_tpl/develop/develop.js", "{{dest}}/develop/develop.js"}.
+{chmod, 8#755, "{{dest}}/compile.sh"}.

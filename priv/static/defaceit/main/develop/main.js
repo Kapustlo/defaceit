@@ -1,0 +1,54 @@
+
+
+
+if (window.urls.length > 0) {
+  $.each(window.urls, function(i,url) {
+  var host_name = url.split( '/' )[2],
+      deface_id = "deface"+i,
+      menu_item = $("<li>"),
+      url_link = menu_item.append($("<a>").attr('id',deface_id).attr("href", "#").click(function(){$("#defaces-list").removeClass("open"); menu_item.addClass("active");Defaceit.load.js(url); return false;}).html(host_name));
+  $('#defaces').prepend(url_link);
+  });
+}
+
+
+user = new Defaceit.Session('http://services.sandbox.defaceit.ru/sessions');
+user.check_status(function(){
+    $('#login_name').html(this.sign_in ? this.data.key.split('/')[3] : "Yandex OpenID");
+    $('#login').html(this.sign_in ?'<a href="http://services.sandbox.defaceit.ru/sessions/destroy">Выйти</a>':'<a href="http://services.sandbox.defaceit.ru/sessions/new">Войти</a>');
+});
+
+
+$( document ).ready( function () {
+ 
+
+  $.ajax( {
+    url : "https://api.github.com/repos/esergeev/defaceit/issues",
+    dataType : "jsonp",
+    success : function ( returndata ) {
+      var html = "";
+      $.each( returndata.data, function ( i, item ) {
+       html += "<h2>" + item.title + "</h2>";
+
+       
+       $.each(item.body.split("\n"), function(i, p){html += "<p>" + p + "</p>";}); 
+      
+       $.each(item.labels, function(i, item){html += "<span class=\"label label-warning\">" + item.name + "</span>";});
+      } );
+      $("#result").html(html);
+    }
+  } );
+
+$.ajax( {
+    url : "https://api.github.com/repos/esergeev/defaceit/commits",
+    dataType : "jsonp",
+    success : function ( returndata ) {
+      var html = "<h2>Последние коммиты:</h2>";
+      $.each( returndata.data, function ( i, item ) {
+         html += "<p class=\"alert alert-info\" >" + item.commit.message + "</p>"
+      } );
+      $("#commits").html(html);
+    }
+  } );
+
+} );

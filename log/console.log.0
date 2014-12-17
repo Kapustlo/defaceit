@@ -1,0 +1,10 @@
+2014-12-16 22:31:54.407 [notice] <0.285.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-16 22:31:54.442 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-16 22:31:54.566 [notice] <0.285.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-16 22:31:54.566 [notice] <0.285.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-16 22:31:54.580 [error] <0.285.0> GET /test [edefaceit] 404 0ms
+2014-12-16 22:31:54.746 [notice] <0.287.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-16 22:31:54.751 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-16 22:31:54.802 [notice] <0.287.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-16 22:31:54.802 [notice] <0.287.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-16 22:31:54.808 [error] <0.287.0> GET /defaceit/test/test.js [edefaceit] 404 0ms

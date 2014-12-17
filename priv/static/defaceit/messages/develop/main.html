@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title here -->
+		<title>BoxCol</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="http://sandbox.defaceit.ru/themes/colorbox/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Portfolio CSS -->
+		<link href="http://sandbox.defaceit.ru/themes/colorbox/css/prettyPhoto.css" rel="stylesheet">
+		<!-- Slider Revolution CSS -->
+		<link href="http://sandbox.defaceit.ru/themes/colorbox/css/settings.css" rel="stylesheet">
+		<!--[if IE 8]>
+		<link rel="stylesheet" href="css/settings-ie8.css">
+		<![endif]-->
+		<!-- Font awesome CSS -->
+		<link href="http://sandbox.defaceit.ru/themes/colorbox/css/font-awesome.min.css" rel="stylesheet">		
+		<!-- Custom CSS -->
+		<link href="http://sandbox.defaceit.ru/themes/colorbox/css/style.css" rel="stylesheet">
+		<!--[if IE]>
+		<link rel="stylesheet" href="css/ie-style.css">
+		<![endif]-->
+	<link rel="stylesheet" href="http://sandbox.defaceit.ru/css/codemirror.css">
+	<link rel="stylesheet" href="http://sandbox.defaceit.ru/css/solarized.css">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+
+<script id="default_tpl" type="text/x-jquery-tmpl"><!--<script id="[[ action ]]_tpl" type="text/x-jquery-tmpl">
+<h1>Определите событие messages.[[ action ]]</h1>
+</script>
+
+<script>
+Defaceit.App.messages.[[ action ]] = function(){
+	    Defaceit.Window.Manager.create('Simple', {
+              content: jQuery('#[[ action ]]_tpl').html(),
+              geometry:['width:750', 'center', 'show']
+            });
+
+	throw('You should specify action');
+}
+</script>-->
+</script>
+	</head>
+	
+	<body>
+		<!-- The main home page
+			Each wrapper is define for seprate pages --><div class="top"></div>
+		<div class="wrapper-home">
+			<div class="container">
+				<div class="header">
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<!-- Header -->
+							<h1><a href="index.html">Boxcol</a></h1><span class="sub-header">Sed utpersatis</span>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="search">
+								<form>
+									<div class="input-group">
+										<!-- Search box and button -->
+										<input type="text" class="form-control" placeholder="Text to search">
+										<span class="input-group-btn">
+											<button class="btn btn-danger" type="button"><i class="fa fa-search"></i></button>
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<!-- Social media links -->
+							<div class="social">
+								<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+								<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Start Menu -->
+				<div class="row">
+					<div class="col-md-4">
+						<!-- First column Box -->
+						<div class="box">
+							<div class="small-box half-width br-blue pull-left box-link">
+								<div class="pad">
+									<!-- link to other page -->
+									<a class="defaceit-action" id="aboutus" href="aboutus.html">
+										<i class="fa fa-info"></i>
+										<h5>About Us</h5>
+									</a>
+								</div>
+							</div>
+							<div class="small-box half-width br-red pull-right box-link">
+								<div class="pad">
+									<!-- link to other page -->
+									<a href="contactus.html">
+										<i class="fa fa-phone"></i>
+										<h5>Contact Us</h5>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<!-- Graph for details -->
+							<div class="medium-box br-black">
+								<div class="pad">
+									<!-- Status Block -->
+									<div class="status">
+										<!-- Spark Line -->
+										<div class="s-header"><span class="sparkline"></span><a href="#">5,934</a></div>
+										<div class="s-right">
+											<span class="sr-up">Import : <i class="fa fa-arrow-up red"></i> 89&#37;</span><br />
+											<span class="sr-down">Export : <i class="fa fa-arrow-down green"></i> 87&#37;</span>
+										</div>
+										<div class="clearfix"></div>
+										<!--  Status Item List -->
+										<div class="counter">
+											<ul>
+												<li>Product value<span>13&#37;<i class="fa fa-angle-up red"></i> &nbsp; 27&#37;<i class="fa fa-angle-down green"></i></span> <span class="list-bar">20,16,19,20,19,17,20,19,17</span> </li>
+												<!-- Spark Line with element -->
+												<li>Material cost<span>25&#37;<i class="fa fa-angle-down green"></i> &nbsp; 17&#37;<i class="fa fa-angle-up red"></i> </span> <span class="list-bar">19,17,16,20,18,17,20,18,17</span> </li>
+												<!-- Spark Line with element -->
+												<li>Electric charges<span>0.6&#37;<i class="fa fa-angle-up red"></i> &nbsp; 33&#37;<i class="fa fa-angle-down green"></i></span> <span class="list-bar">17,19,23,19,22,19,16,19,22</span> </li>
+											</ul>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<!-- Second column Box -->
+						<div class="box">
+							<div class="medium-box weather">
+								<div class="w-pad">
+									<!-- Weather details block -->
+									<!-- Current Weather Report -->
+									<div class="w-today">
+										<div>
+											<!-- Image for weather -->
+											<img src="http://sandbox.defaceit.ru/themes/colorbox/img/w1.png" class="img-responsive" alt="" />
+										</div>
+										<h6>45<sup>&deg;C</sup></h6>
+										<span class="w-info">Sep 24, 2013<br />Wind : 50 kmph,<br />Humidity : 75&#37;</span>
+										<div class="clearfix"></div>
+									</div>
+									<!-- Next Day weather report -->
+									<div class="w-report">
+										<img src="http://sandbox.defaceit.ru/themes/colorbox/img/w1.png" class="img-responsive" alt="" /><span><strong>30&deg;C</strong> Sep 25, <span>Wind : 55 kmph, Humidity : 79&#37;</span></span>
+										<div class="clearfix"></div>
+									</div>
+									<!-- Next Day weather report -->
+									<div class="w-report">
+										<img src="http://sandbox.defaceit.ru/themes/colorbox/img/w1.png" class="img-responsive" alt="" /><span><strong>35&deg;C</strong> Sep 26, <span>Wind : 45 kmph, Humidity : 90&#37;</span></span>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+							<!-- Divide into two column inside one column -->
+							<!-- Small size box width 50% -->
+							<div class="small-box half-width br-green pull-left box-link">
+								<div class="pad">
+									<!-- Link to other page -->
+									<a href="service.html">
+										<i class="fa fa-gears"></i>
+										<h5>Service</h5>
+									</a>
+								</div>
+							</div>
+							<div class="small-box half-width br-orange pull-right box-link">
+								<div class="pad">
+									<!-- Link to other page -->
+									<a href="product.html">
+										<i class="fa fa-puzzle-piece"></i>
+										<h5>Product</h5>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<!-- Third column Box -->
+						<div class="box">
+							<div class="small-box half-width br-pink pull-left box-link">
+								<div class="pad">
+									<!-- Link to other page -->
+									<a href="login.html">
+										<i class="fa fa-group"></i>
+										<h5>Login</h5>
+									</a>
+								</div>
+							</div>
+							<div class="small-box half-width br-purple pull-right box-link">
+								<div class="pad">
+									<!-- Link to other page -->
+									<a href="feature.html">
+										<i class="fa fa-gift"></i>
+										<h5>Features</h5>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<!-- Testimonial carousel -->
+							<div class="medium-box img-gal">
+								<div id="carousel-example-generic1" class="carousel image slide medium-box" data-ride="carousel">
+									<!-- Controls for carousel -->
+										<a class="left c-control" href="#carousel-example-generic1" data-slide="prev">
+											<i class="fa fa-chevron-left"></i>
+										</a>
+										<a class="right c-control" href="#carousel-example-generic1" data-slide="next">
+											<i class="fa fa-chevron-right"></i>
+										</a>
+									<!-- Wrapper for slides -->
+									<div class="carousel-inner">
+										<div class="item active">
+											<!-- Carousel Image -->
+											<img src="http://sandbox.defaceit.ru/themes/colorbox/img/img01.jpg" class="img-responsive" alt="">
+										</div>
+										<div class="item">
+											<!-- Carousel Image -->
+											<img src="http://sandbox.defaceit.ru/themes/colorbox/img/img02.jpg" class="img-responsive" alt="">
+										</div>
+										<div class="item">
+											<!-- Carousel Image -->
+											<img src="http://sandbox.defaceit.ru/themes/colorbox/img/img03.jpg" class="img-responsive" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Third row for menu -->
+				<div class="row">
+					<div class="col-md-4">
+						<!-- Fourth Box -->
+						<div class="box">
+							<!-- "half-width" class divide the full width to half -->
+							<div class="small-box half-width br-green pull-left box-link">
+								<div class="pad">
+									<!-- Link to other page -->
+									<a href="portfolio.html">
+										<i class="fa fa-camera"></i>
+										<h5>Portfolio</h5>
+									</a>
+								</div>
+							</div>
+							<div class="small-box half-width br-pink pull-right box-link">
+								<div class="pad">
+									<!-- Link to other page -->
+									<a href="testimonial.html">
+										<i class="fa fa-bullhorn"></i>
+										<h5>Testimonial</h5>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<!-- Block for User details -->
+							<div class="medium-box team">
+								<div class="pad">
+									<!-- User profile block -->
+									<div class="team-member">
+										<div>
+											<!-- User Image -->
+											<img src="http://sandbox.defaceit.ru/themes/colorbox/img/user-sm.jpg" class="img-responsive" alt="" />
+										</div>
+										<!-- User Details -->
+										<h3> H. Rackham</h3>
+										<span>Director & CEO</span>
+										<p>At vero eos et accusamus a piece of class years old.</p>
+										<div class="member-dtls">
+											<ul>
+												<!-- User soical media responce -->
+												<li>84,119<span class="social-link"><i class="fa fa-facebook"></i> Likes</span></li>
+												<li>34,567<span class="social-link"><i class="fa fa-twitter"></i> followers</span></li>
+												<li>5,484<span class="social-link"><i class="fa fa-instagram"></i> photos</span></li>
+											</ul>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<!-- Fifth Box -->
+						<div class="box">
+							<div class="medium-box br-purple">
+								<div class="pad">
+									<!-- Sign In Area -->
+									<div class="log-in">
+										<h5><i class="fa fa-user"></i> &nbsp;Sign In</h5>
+										<!-- Sign in Form Start -->
+										<form class="form-horizontal" role="form">
+											<div class="form-group">
+												<label for="username" class="col-lg-3 control-label">Username</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" id="username" placeholder="Username">
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="password" class="col-lg-3 control-label">Password</label>
+												<div class="col-lg-9">
+													<input type="password" class="form-control" id="password" placeholder="Password">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-lg-offset-3 col-lg-9">
+													<button type="submit" class="btn btn-info">Login</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="small-box half-width br-blue pull-left box-link">
+								<div class="pad">
+									<a href="sitemap.html">
+										<i class="fa fa-sitemap"></i>
+										<h5>Site map</h5>
+									</a>
+								</div>
+							</div>
+							<div class="small-box half-width br-green pull-right box-link">
+								<div class="pad">
+									<a href="faq.html">
+										<i class="fa fa-question"></i>
+										<h5>Faq</h5>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<!-- sixth Box -->
+						<div class="box">
+							<div class="small-box half-width br-lblue pull-left box-link">
+								<div class="pad">
+									<a href="gallery.html">
+										<i class="fa fa-picture-o"></i>
+										<h5>Gallery</h5>
+									</a>
+								</div>
+							</div>
+							<div class="small-box half-width br-red pull-right box-link">
+								<div class="pad">
+									<a href="blog.html">
+										<i class="fa fa-comments-o"></i>
+										<h5>Blog</h5>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="medium-box br-blue">
+								<div class="pad">
+									<!-- Plot Chart -->
+									<div class="plot-chart"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fourth row for menu -->
+				<div class="row">
+					<div class="col-md-4">
+						<!-- Seventh Box -->
+						<div class="box">
+							<div class="medium-box br-blue">
+								<div class="pad">
+									<!-- Subscribe Form -->
+									<div class="sform">
+										<h5 class="white"><i class="fa fa-envelope"></i> &nbsp;Subscription</h5>
+										<div class="form">
+											<form role="form">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Enter your Name">
+												</div>
+												<div class="form-group">
+													<input type="email" class="form-control" placeholder="Enter your E-mail">
+												</div>
+												<div class="form-group">
+													<!-- Subscribe Button -->
+													<button type="button" class="btn btn-danger btn-sm">Subscribe</button>
+													<button type="button" class="btn btn-default btn-sm">Reset</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="small-box half-width br-green pull-left box-link">
+								<div class="pad">
+									<a href="support.html">
+										<i class="fa fa-headphones"></i>
+										<h5>Support</h5>
+									</a>
+								</div>
+							</div>
+							<div class="small-box half-width br-pink pull-right box-link">
+								<div class="pad">
+									<a href="careers.html">
+										<i class="fa fa-book"></i>
+										<h5>Careers</h5>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<!-- Eight Box -->
+						<div class="large-box br-gray">
+							<div class="pad">
+								<!-- Pricing Table -->
+								<div class="ptable tabel-responsive">
+									<!-- Pricing table heading -->
+									<h5><i class="fa fa-table"></i> &nbsp;Pricing Table</h5>
+									<table class="table table-bordered">
+										<tr class="br-lblue">
+											<!-- Table column heading -->
+											<th>#</th>
+											<th>Details</th>
+											<th>Basic</th>
+											<th>Medium</th>
+											<th>Premium</th>
+										</tr>
+										<tr>
+											<!-- Column details -->
+											<td>1</td>
+											<td>Storage [5.5 GB]</td>
+											<td><i class="fa fa-check green"></i></td>
+											<td><i class="fa fa-check green"></i></td>
+											<td><i class="fa fa-check green"></i></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>FTP Account</td>
+											<td><i class="fa fa-check green"></i></td>
+											<td><i class="fa fa-check green"></i></td>
+											<td><i class="fa fa-check green"></i></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>E-mail [30]</td>
+											<td><i class="fa fa-times red"></i></td>
+											<td><i class="fa fa-check green"></i></td>
+											<td><i class="fa fa-check green"></i></td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Down-Speed [8mbps]</td>
+											<td><i class="fa fa-times red"></i></td>
+											<td><i class="fa fa-check green"></i></td>
+											<td><i class="fa fa-check green"></i></td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Up-Speed [1mbps]</td>
+											<td><i class="fa fa-times red"></i></td>
+											<td><i class="fa fa-times red"></i></td>
+											<td><i class="fa fa-check green"></i></td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>3 month extra</td>
+											<td><i class="fa fa-times red"></i></td>
+											<td><i class="fa fa-times red"></i></td>
+											<td><i class="fa fa-check green"></i></td>
+										</tr>
+										<tr>
+											<!-- buy now buttons -->
+											<td colspan="2">&nbsp;</td>
+											<td><a href="#" class="btn btn-xs btn-danger">BUY $3</a></td>
+											<td><a href="#" class="btn btn-sm btn-danger">BUY $8</a></td>
+											<td><a href="#" class="btn btn-sm btn-danger">BUY $13</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fifth row for menu -->
+				<div class="row">
+					<div class="col-md-4">
+						<!-- Ninth Box -->
+						<!-- Testimonial block -->
+						<div class="medium-box br-gray testimonial">
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+								<!-- Controls -->
+								<a class="left c-control" href="#carousel-example-generic" data-slide="prev">
+									<i class="fa fa-chevron-left"></i>
+								</a>
+								<a class="right c-control" href="#carousel-example-generic" data-slide="next">
+									<i class="fa fa-chevron-right"></i>
+								</a>
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
+									<!-- First testimonial div -->
+									<div class="item active">
+										<img src="http://sandbox.defaceit.ru/themes/colorbox/img/transparent.png" alt="" />
+										<div class="carousel-caption">
+											<div class="member">
+												<div >
+													<!-- Image for user -->
+													<img src="http://sandbox.defaceit.ru/themes/colorbox/img/user-sm.jpg" class="img-responsive img-circle img-thumbnail" alt="" />
+												</div>
+												<!-- User name and company name -->
+												<h4>P. Santilo</h4>
+												<span>Quia dolo rsitam</span>
+												<!-- User's comment -->
+												<blockquote class="br-red">
+													<p>Sincidunt ut labore et dolore magnam aliquam quaerat volue who do not know how to pursue pleasure rationptatem. Ut enimad miniquis nostrum exerem ullam corpoboriosam.</p>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+									<!-- Second testimonial div -->
+									<div class="item">
+										<img src="http://sandbox.defaceit.ru/themes/colorbox/img/transparent.png" alt="" />
+										<div class="carousel-caption">
+											<div class="member">
+												<div >
+													<img src="http://sandbox.defaceit.ru/themes/colorbox/img/user-sm.jpg" class="img-responsive img-circle img-thumbnail" alt="" />
+												</div>
+												<h4>T. Usaiore</h4>
+												<span>Neque porro quisquam</span>
+												<!-- User's comment -->
+												<blockquote class="br-green">
+													<p>Sincidunt ut labore et dolore magnam aliquam quaerat volupe who do not know how to pursue pleasure rationtatem. Ut enimad miniquis nostrum exerem ullam corpoboriosam.</p>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+									<!-- Third testimonial div -->
+									<div class="item">
+										<img src="http://sandbox.defaceit.ru/themes/colorbox/img/transparent.png" alt="" />
+										<div class="carousel-caption">
+											<div class="member">
+												<div >
+													<img src="http://sandbox.defaceit.ru/themes/colorbox/img/user-sm.jpg" class="img-responsive img-circle img-thumbnail" alt="" />
+												</div>
+												<h4>S. Bunsaer</h4>
+												<span>Estqui doloremps</span>
+												<!-- User's comment -->
+												<blockquote class="br-purple">
+													<p>Sincidunt ut labore et dolore magnam aliquam quaerat volue who do not know how to pursue pleasure rationptatem. Ut enimad miniquis nostrum exerem ullam corpoboriosam.</p>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="medium-box br-black">
+							<div class="pad">
+								<!-- contact details block -->
+								<div class="address white">
+									<span class="c-name">Contact Us</span>
+									<!-- Address -->
+									<p>#91/127 Piciatis unde Kolaman <br />omnis unde omnis Bangalore - 458745<p>
+									<p class="num"><span class="mute"><i class="fa fa-envelope"></i></span> : <a href="#" >abc-xyz@example.com</a><br /><span class="mute"><i class="fa fa-phone-square"></i></span> : +91 - 123 - 456 - 7899</p>
+									<!-- Social media links -->
+									<div class="social">
+										<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+										<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+										<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+										<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<!-- Google map block -->
+						<div class="medium-box br-gray">
+							<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/?ie=UTF8&amp;ll=12.953997,77.63094&amp;spn=0.815042,1.352692&amp;t=m&amp;z=10&amp;output=embed"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- Grid box Menu -->
+				<!-- End -->
+				
+			</div>
+		</div>
+				
+		
+		<!-- Footer -->
+			<div class="footer">
+				<div class="container">
+					<!-- Footer copy right  -->
+					<div class="copy-rit">
+						<span> &copy; Copyright 2013 - <a href="#">Company Name</a></span>
+					</div>
+				</div>
+			</div>
+		<!-- Footer End -->
+		
+		
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/tools.js"></script>
+
+<script type="text/javascript" src="http://sandbox.defaceit.ru/js/codemirror.js"></script>
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/js/mode/javascript.js"></script>
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/js/mode/xml.js"></script>
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/js/mode/css.js"></script>
+	<script type="text/javascript" src="http://sandbox.defaceit.ru/js/mode/htmlmixed.js"></script>
+
+
+		<!-- Bootstrap JS -->
+		<script src="http://sandbox.defaceit.ru/themes/colorbox/js/bootstrap.min.js"></script>
+		<!--  jQuery Spark line  JS -->
+		<script src="http://sandbox.defaceit.ru/themes/colorbox/js/jquery.sparkline.min.js"></script>
+        <!-- jQuery flot -->
+        <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+        <script src="http://sandbox.defaceit.ru/themes/colorbox/js/jquery.flot.min.js"></script>     
+        <script src="http://sandbox.defaceit.ru/themes/colorbox/js/jquery.flot.resize.min.js"></script>
+		<!-- Pretty Photo, Filter And Isotope JS -->
+		<script type="text/javascript" src="http://sandbox.defaceit.ru/themes/colorbox/js/filter.js"></script>
+		<script type="text/javascript" src="http://sandbox.defaceit.ru/themes/colorbox/js/isotope.js"></script>
+		<script type="text/javascript" src="http://sandbox.defaceit.ru/themes/colorbox/js/jquery.prettyPhoto.js"></script>
+		<!-- Revolution Slider JS -->
+		<script src="http://sandbox.defaceit.ru/themes/colorbox/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="http://sandbox.defaceit.ru/themes/colorbox/js/jquery.themepunch.plugins.min.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="http://sandbox.defaceit.ru/themes/colorbox/js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="http://sandbox.defaceit.ru/themes/colorbox/js/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script src="http://sandbox.defaceit.ru/themes/colorbox/js/custom.js"></script>
+		<!-- Javascript for this page -->
+		<!-- Js for plot -->
+		<script type="text/javascript">
+			/* plot js */
+        
+         $(function() {
+            var d1 = [[0, 1], [1, 2], [2, 3], [3, 4],[4, 5], [5, 6], [6, 5], [7, 6],[8, 7], [9, 6], [10, 7], [11, 8],[12, 9], [13, 9], [14, 9], [15, 8],[16, 8], [17, 9], [18, 10], [19, 10],[20, 9], [21, 8], [22, 7], [23, 8],[24, 9], [25, 8], [26, 6], [27, 4],[28, 2]];
+			var options = {
+               series: {
+                  lines: {
+                     show: true, fill: true, fillColor: "rgba(113,214,232,0.5)", lineWidth:1
+                  },
+                  points: {
+                     show: true, fill: true, fillColor: "rgba(113,214,232,0.5)"
+                  }
+               },
+               colors :["rgba(255,255,255,1)"],
+               grid: {
+                  color: "#fff", borderWidth: 0, minBorderMargin: 5
+               },
+               xaxis: {
+                  font: {
+                        size: 10,
+                        color: "rgba(255,255,255,0.8)"
+                    }
+               },
+               yaxis: {
+                  font: {
+                        size: 10,
+                        color: "rgba(255,255,255,0.8)"
+                    }
+               }
+            };
+			
+            $.plot(".plot-chart", [ d1 ], options);
+         });
+		 
+		</script>
+		
+
+
+<script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/messages/develop/messages.js"></script>
+	<script>
+	
+	Defaceit.Config = Defaceit.Config || {};
+	Defaceit.Config.messages = {
+	    start_action: 'main'
+	};
+
+	Defaceit.App.messages.debug = Defaceit.debug || Defaceit.App.messages.debug;
+        
+        App = Defaceit.App.messages;
+        
+	h = Defaceit.Helpers;
+	h.domain(Defaceit.App.messages.app);
+	h.context('template');
+
+
+_.templateSettings = {
+  interpolate: /\[\[(.+?)\]\]/g
+};
+
+function color_write(message, result){
+    document.write(message+'<span style="color:green">'+result+'</span><br/>');
+    console.log('%c '+message+result, 'color: green');
+}
+
+color_write('Имя проекта:', 'messages');
+color_write('Версия:', Defaceit.App.messages.version);
+color_write('Debug:', !((App.debug+'').replace(/\n/g,'').replace('function (){    // ','').replace('  }','') == 'Debug is off'));
+color_write('Домен переменных:', h.domainValue);
+color_write('Контекс переменных:', h.contextValue);
+
+
+	</script>
+
+<h1>Help</h1>
+App - короткая ссылка на приложение<br/>
+h - короткая ссылка на Defaceit.Helpers<br />		
+	</body>	
+</html>

@@ -1,0 +1,35 @@
+2014-12-17 21:37:36.530 [notice] <0.289.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:37:36.542 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:37:36.633 [notice] <0.289.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:37:36.633 [notice] <0.289.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:37:36.655 [error] <0.289.0> GET /test [edefaceit] 404 0ms
+2014-12-17 21:37:37.410 [notice] <0.291.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:37:37.426 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:37:37.526 [notice] <0.291.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:37:37.526 [notice] <0.291.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:37:37.538 [error] <0.291.0> GET /defaceit/test/test.js [edefaceit] 404 0ms
+2014-12-17 21:40:37.579 [notice] <0.293.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:40:37.579 [notice] <0.294.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:40:37.581 [notice] <0.295.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:40:37.623 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:40:37.639 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:40:37.691 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:40:37.692 [notice] <0.298.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:40:37.693 [notice] <0.299.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:40:37.723 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:40:37.755 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:40:38.128 [notice] <0.293.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:40:38.128 [notice] <0.293.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:40:38.130 [notice] <0.294.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:40:38.130 [notice] <0.294.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:40:38.138 [notice] <0.295.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:40:38.138 [notice] <0.295.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:40:38.145 [error] <0.294.0> GET /calendar/images/ui-bg_glass_80_d7ebf9_1x400.png [edefaceit] 404 0ms
+2014-12-17 21:40:38.145 [error] <0.293.0> GET /calendar/images/ui-bg_glass_50_3baae3_1x400.png [edefaceit] 404 0ms
+2014-12-17 21:40:38.154 [error] <0.295.0> GET /calendar/images/ui-icons_3d80b3_256x240.png [edefaceit] 404 0ms
+2014-12-17 21:40:38.166 [notice] <0.298.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:40:38.166 [notice] <0.298.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:40:38.168 [notice] <0.299.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:40:38.168 [notice] <0.299.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:40:38.177 [error] <0.298.0> GET /calendar/images/ui-bg_highlight-soft_100_deedf7_1x100.png [edefaceit] 404 0ms
+2014-12-17 21:40:38.180 [error] <0.299.0> GET /calendar/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png [edefaceit] 404 0ms
