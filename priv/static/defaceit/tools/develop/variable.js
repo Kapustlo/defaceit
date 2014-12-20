@@ -8,7 +8,7 @@ if (!Defaceit.Variable) {
 	Defaceit.Variable.prototype = _.extend(Defaceit.Variable.prototype, {
 		fetch: function(){
 			var that = this;		
-			$.getJSON('http://eservices.sandbox.defaceit.ru/variable/get_json/'+this.id,function(data){
+			$.getJSON('http://eservices.defaceit.ru/variable/get_json/'+this.id,function(data){
 				that.value = decodeURIComponent(data[that.id]);
 				that.trigger('sync', data, that);
 			}, {async:false});

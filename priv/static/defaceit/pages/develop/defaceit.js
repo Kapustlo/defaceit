@@ -5,7 +5,7 @@ function isDefaceit(){
 
 Defaceit.Model = Backbone.Model.extend({
 	
-	urlRoot: "http://eservices.sandbox.defaceit.ru/variable/pack_json",
+	urlRoot: "http://eservices.defaceit.ru/variable/pack_json",
 	parse: function(resp, options) {
 		var result = resp;
 		if(resp.pack) {
@@ -28,7 +28,7 @@ Defaceit.Template = Defaceit.Model.extend({
 
 
 Defaceit.Collection = Backbone.Collection.extend({
-	urlRoot: "http://eservices.sandbox.defaceit.ru/variable/pack_json",
+	urlRoot: "http://eservices.defaceit.ru/variable/pack_json",
 	
 	parse: function(resp) {
 

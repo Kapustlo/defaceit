@@ -64,8 +64,8 @@ var ThumbnailEditView = Defaceit.View.extend({
 	},
 
 	initialize: function(){
-		this.template = new Defaceit.Model({id: "codeeditor_page_widget.template.sandbox.defaceit.ru"});
-		this.template.urlRoot = "http://eservices.sandbox.defaceit.ru/variable/pack_json",
+		this.template = new Defaceit.Model({id: "codeeditor_page_widget.template.defaceit.ru"});
+		this.template.urlRoot = "http://eservices.defaceit.ru/variable/pack_json",
 		this.template.fetch();
 		this.template.on('sync', this.render, this);
 	},

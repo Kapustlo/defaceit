@@ -1,4 +1,4 @@
-Defaceit.load.css('http://sandbox.defaceit.ru/defaceit/tools/css/defaceit.css')
+Defaceit.load.css('http://defaceit.ru/defaceit/tools/css/defaceit.css')
 //console.debug(jQuery);
 
 	Defaceit.Window.Manager.create('Simple', {

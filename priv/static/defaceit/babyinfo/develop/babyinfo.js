@@ -1,7 +1,7 @@
-Defaceit.load.css('http://sandbox.defaceit.ru/defaceit/babyinfo/css/babycalc.css');
+Defaceit.load.css('http://defaceit.ru/defaceit/babyinfo/css/babycalc.css');
 
 if (DefaceitHome) {
-    Defaceit.load.css('http://sandbox.defaceit.ru/defaceit/tools/css/home.css');
+    Defaceit.load.css('http://defaceit.ru/defaceit/tools/css/home.css');
 }
 
 
@@ -13,10 +13,10 @@ if (DefaceitHome) {
             geometry: ['center','show']
             });*/
 
-Defaceit.load.image('http://sandbox.defaceit.ru/images/widget/radio_button.png');
-Defaceit.load.image('http://sandbox.defaceit.ru/images/widget/small_radio_button.png');
-Defaceit.load.image('http://sandbox.defaceit.ru/images/widget/calc_bg.png');
-Defaceit.load.image('http://sandbox.defaceit.ru/defaceit/babyinfo/images/pregnant.jpg');
+Defaceit.load.image('http://defaceit.ru/images/widget/radio_button.png');
+Defaceit.load.image('http://defaceit.ru/images/widget/small_radio_button.png');
+Defaceit.load.image('http://defaceit.ru/images/widget/calc_bg.png');
+Defaceit.load.image('http://defaceit.ru/defaceit/babyinfo/images/pregnant.jpg');
 
 
 
@@ -47,7 +47,7 @@ BabyInfo = _.extend({
     }
 
 
-    BabyInfo.children = new Defaceit.Collection({'id':BabyInfo.userName}, {url:"http://eservices.sandbox.defaceit.ru/variable/pack_json/"+BabyInfo.userName+'.'+BabyInfo.app});
+    BabyInfo.children = new Defaceit.Collection({'id':BabyInfo.userName}, {url:"http://eservices.defaceit.ru/variable/pack_json/"+BabyInfo.userName+'.'+BabyInfo.app});
     BabyInfo.children.on('sync', function(){
             BabyInfo.trigger('updated');
 

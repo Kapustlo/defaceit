@@ -133,8 +133,8 @@ EditView = Backbone.View.extend({
     var that = this;
 
     this.data = data;
-    this.template = new Defaceit.Template({id: "edit_page.template.ide.sandbox.defaceit.ru"});
-    this.template.urlRoot = "http://eservices.sandbox.defaceit.ru/variable/get_pack_json",
+    this.template = new Defaceit.Template({id: "edit_page.template.ide.defaceit.ru"});
+    this.template.urlRoot = "http://eservices.defaceit.ru/variable/get_pack_json",
     this.template.fetch();
     this.template.on('sync', this.render, this);
     setTimeout(function(){that.trigger('done');}, 10);

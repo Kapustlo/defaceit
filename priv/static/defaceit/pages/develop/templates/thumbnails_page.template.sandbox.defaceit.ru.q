@@ -10,10 +10,10 @@
         <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic-ext" rel="stylesheet" type="text/css">
         
-        <script src="http://sandbox.defaceit.ru/defaceit/pages/pages.js"></script>
+        <script src="http://defaceit.ru/defaceit/pages/pages.js"></script>
         <script src="/bootstrap/js/bootstrap.js"></script>
 
-        <script src="http://sandbox.defaceit.ru/comments.js"></script>
+        <script src="http://defaceit.ru/comments.js"></script>
 
 
         <!--DefaultValues-->
@@ -21,7 +21,7 @@
         <style type="text/css">
        
         .blockMenuItem, .page{
-            background: url("http://sandbox.defaceit.ru/images/bg.png") repeat scroll 0 0 #FFFFFF !important;
+            background: url("http://defaceit.ru/images/bg.png") repeat scroll 0 0 #FFFFFF !important;
             border: 1px solid #FFFFFF;
             border-radius: 6px 6px 6px 6px;
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);

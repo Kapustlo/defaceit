@@ -5,8 +5,8 @@
  */
 
 var Article = Defaceit.Model.extend({
-	//url: "sandbox.defaceit.ru",
-	urlRoot: "http://eservices.sandbox.defaceit.ru/variable/pack_json",
+	//url: "defaceit.ru",
+	urlRoot: "http://eservices.defaceit.ru/variable/pack_json",
 
 	defaults: {
 		title: "",
@@ -52,8 +52,8 @@ var ArticleEditView = Defaceit.View.extend({
 	},
 
 	initialize: function(){
-		this.template = new Defaceit.Model({id: "article.template.sandbox.defaceit.ru"});
-		this.template.urlRoot = "http://eservices.sandbox.defaceit.ru/variable/pack_json",
+		this.template = new Defaceit.Model({id: "article.template.defaceit.ru"});
+		this.template.urlRoot = "http://eservices.defaceit.ru/variable/pack_json",
 		this.template.fetch();
 		this.template.on('sync', this.render, this);
 	},

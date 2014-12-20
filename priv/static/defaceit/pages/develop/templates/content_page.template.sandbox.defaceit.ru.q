@@ -8,9 +8,9 @@
         <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic-ext" rel="stylesheet" type="text/css">
         
-        <script src="http://sandbox.defaceit.ru/defaceit/pages/pages.js"></script>
+        <script src="http://defaceit.ru/defaceit/pages/pages.js"></script>
         <script src="/bootstrap/js/bootstrap.js"></script>
-        <script src="http://sandbox.defaceit.ru/comments.js"></script>
+        <script src="http://defaceit.ru/comments.js"></script>
 
         <!--DefaultValues-->    
 

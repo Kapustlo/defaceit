@@ -1,5 +1,5 @@
 Defaceit.Helpers = {
-	domainValue: 'sandbox.defaceit.ru',
+	domainValue: 'defaceit.ru',
 	contextValue: '',
 
 	list: function(name) {
@@ -54,12 +54,12 @@ Defaceit.Helpers = {
 
 Defaceit.Helpers.Templates = {
 	list: function(){
-			vars('templates.sandbox.defaceit.ru');
+			vars('templates.defaceit.ru');
 			return '';
 	},
 
 	edit: function(name, defaultAttrKey){
-		var id = name + '.templates.sandbox.defaceit.ru';
+		var id = name + '.templates.defaceit.ru';
 		this.currentTemplate = new Defaceit.Template({'id': id});
 		
 
@@ -101,7 +101,7 @@ function edit(block, n){
 
 function vars(path, name){
 	var o = {};
-	$.getJSON('http://eservices.sandbox.defaceit.ru/variable/pack_json/'+path,function(data){
+	$.getJSON('http://eservices.defaceit.ru/variable/pack_json/'+path,function(data){
 		_.each(data.pack, function(d,k){
 				var str = d.variable_name.replace(Defaceit.Helpers.domainValue,'')
 										 .replace(Defaceit.Helpers.contextValue,'')
@@ -150,7 +150,7 @@ Defaceit.Helpers.Templates.EditView = Defaceit.View.extend({
 		if(!this.model){
 			alert('You must specify a model for Template edit view.');
 		}
-		this.template = new Defaceit.Template({id: "edit_form.templates.sandbox.defaceit.ru"});
+		this.template = new Defaceit.Template({id: "edit_form.templates.defaceit.ru"});
 		this.template.fetch();
 		this.template.on('sync', this.render, this);
 	},

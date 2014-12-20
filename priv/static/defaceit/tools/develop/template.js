@@ -10,7 +10,7 @@ _.templateSettings = {
 Defaceit.Template = Defaceit.Model.extend({
 	initialize: function(template, namespace) {
 		this.templateName = template;
-		namespace = namespace || 'template.sandbox.defaceit.ru';
+		namespace = namespace || 'template.defaceit.ru';
 		this.template = Defaceit.Variable(template, namespace);
 		this.template.on('loaded', this.parse, this);
 		this.status('start');
@@ -21,7 +21,7 @@ Defaceit.Template = Defaceit.Model.extend({
 			var template = this.template.get();
 			if (!template) {
 				if (confirm('Template not defined: ' + this.templateName)) {
-					document.location = 'http://sandbox.defaceit.ru/queue/'+this.template.full_name();
+					document.location = 'http://defaceit.ru/queue/'+this.template.full_name();
 				}
 				return;
 			}

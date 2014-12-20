@@ -1,1 +1,1 @@
-origin.mail.scripts.test.sandbox.defaceit.ru
+origin.mail.scripts.test.defaceit.ru

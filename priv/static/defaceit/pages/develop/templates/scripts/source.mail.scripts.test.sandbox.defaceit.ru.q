@@ -1,1 +1,1 @@
-source.mail.scripts.test.sandbox.defaceit.ru
+source.mail.scripts.test.defaceit.ru

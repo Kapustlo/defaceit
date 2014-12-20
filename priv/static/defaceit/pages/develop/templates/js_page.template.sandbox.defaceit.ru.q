@@ -7,9 +7,9 @@
         <link href="/bootstrap/css/my.css" rel="stylesheet">
         <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
         
-        <script src="http://sandbox.defaceit.ru/defaceit/pages/pages.js"></script>
+        <script src="http://defaceit.ru/defaceit/pages/pages.js"></script>
         <script src="/bootstrap/js/bootstrap.js"></script>
-        <script src="http://sandbox.defaceit.ru/comments.js"></script>
+        <script src="http://defaceit.ru/comments.js"></script>
 
 {{Script}}
         <!--DefaultValues-->    

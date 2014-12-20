@@ -40,7 +40,7 @@ background-clip: padding-box;
 }
 
 .large_radio_group .button{
-        background: url('http://sandbox.defaceit.ru/images/widget/radio_button.png') no-repeat;
+        background: url('http://defaceit.ru/images/widget/radio_button.png') no-repeat;
         font-size: 28px;
         height: 33px;
         letter-spacing: 1px;
@@ -54,7 +54,7 @@ background-clip: padding-box;
 }
 
 .small_radio_group .button {
-        background: url('http://sandbox.defaceit.ru/images/widget/small_radio_button.png') no-repeat;
+        background: url('http://defaceit.ru/images/widget/small_radio_button.png') no-repeat;
         padding-left: 25px;
         margin-left: 20px;
         height: 17px;
@@ -84,7 +84,7 @@ background-clip: padding-box;
 }
 
 #calc {
-        background: url('http://sandbox.defaceit.ru/images/widget/calc_bg.png');
+        background: url('http://defaceit.ru/images/widget/calc_bg.png');
         box-shadow: 0 0 16px -6px #000000 inset;
         padding-top:10px;
 }

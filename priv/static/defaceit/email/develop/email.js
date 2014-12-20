@@ -1,4 +1,4 @@
-Defaceit.load.css('http://sandbox.defaceit.ru/defaceit/email/css/email.css');
+Defaceit.load.css('http://defaceit.ru/defaceit/email/css/email.css');
 
 Defaceit.App = Defaceit.App || {};
 Defaceit.Config = Defaceit.Config || {};

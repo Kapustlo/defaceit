@@ -8,7 +8,7 @@
 </style>
 
 <div id="calc">
-  <img id="pregnancy_planing" src="http://sandbox.defaceit.ru/defaceit/babyinfo/images/pregnant.jpg" height="250">
-  <img id="pregnant" src="http://sandbox.defaceit.ru/defaceit/babyinfo/images/pregnant.jpg" height="250">
-  <img id="newborn" src="http://sandbox.defaceit.ru/defaceit/babyinfo/images/pregnant.jpg" height="250">
+  <img id="pregnancy_planing" src="http://defaceit.ru/defaceit/babyinfo/images/pregnant.jpg" height="250">
+  <img id="pregnant" src="http://defaceit.ru/defaceit/babyinfo/images/pregnant.jpg" height="250">
+  <img id="newborn" src="http://defaceit.ru/defaceit/babyinfo/images/pregnant.jpg" height="250">
 </div>

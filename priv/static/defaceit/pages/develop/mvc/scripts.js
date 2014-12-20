@@ -73,7 +73,7 @@ var ScriptEditFormView = Defaceit.View.extend({
 	},
 
 	initialize: function(){
-		this.template = new Defaceit.Model({id: "script.templates.sandbox.defaceit.ru"});
+		this.template = new Defaceit.Model({id: "script.templates.defaceit.ru"});
 		this.template.fetch();
 		this.template.on('sync', this.render, this);
 	},

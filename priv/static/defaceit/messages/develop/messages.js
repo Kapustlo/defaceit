@@ -1,4 +1,4 @@
-Defaceit.load.css('http://sandbox.defaceit.ru/defaceit/messages/css/messages.css');
+Defaceit.load.css('http://defaceit.ru/defaceit/messages/css/messages.css');
 
 Defaceit.App = Defaceit.App || {};
 Defaceit.Config = Defaceit.Config || {};
