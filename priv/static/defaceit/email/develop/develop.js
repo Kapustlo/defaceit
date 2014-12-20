@@ -1,11 +1,11 @@
 Defaceit.debug = function(message){console.debug(message);}
 
-Defaceit.App.test.debug = Defaceit.debug || Defaceit.App.test.debug;
+Defaceit.App.email.debug = Defaceit.debug || Defaceit.App.email.debug;
        
-App = Defaceit.App.test;
+App = Defaceit.App.email;
         
 h = Defaceit.Helpers;
-h.domain(Defaceit.App.test.app);
+h.domain(Defaceit.App.email.app);
 h.context('template');
 
 
@@ -18,8 +18,8 @@ function color_write(message, result){
     console.log('%c '+message+result, 'color: green');
 }
 
-color_write('Project name:', 'test');
-color_write('Version:', Defaceit.App.test.version);
+color_write('Project name:', 'email');
+color_write('Version:', Defaceit.App.email.version);
 color_write('Debug:', !((App.debug+'').replace(/\n/g,'').replace('function (){    // ','').replace('  }','') == 'Debug is off'));
 color_write('Variables domain:', h.domainValue);
 color_write('Variables context:', h.contextValue);

@@ -240,7 +240,7 @@ Defaceit.Helpers.Templates.EditView = Defaceit.View.extend({
 
 	save: function() {
 		//alert(this.editor.getValue());
-		this.model.set(this.defaultAttrKey, escape(this.editor.getValue()));
+		this.model.set(this.defaultAttrKey, encodeURIComponent(this.editor.getValue()));
     	//this.model.set('content', jQuery('#defaceit-article-content').val());
     	this.model.save();
     	this.model.once('sync', function(){alert('Model saved')}, this);

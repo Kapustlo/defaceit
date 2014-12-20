@@ -5,7 +5,6 @@ lost(Get, []) ->
 	{ok, Result} = parse(Req:uri()),
 
 	Action = proplists:get_value(action, Result, default),
-
 	case Action of
 		editme ->
 			{redirect, "/app/edit/" ++ application_name(Result)};
@@ -38,8 +37,7 @@ app_render(Info) ->
 	
 	case Owner of
 		[]  ->
-			{output, application_name(Info)};
-			%{redirect, "/app/edit/" ++ application_name(Info)};
+			{redirect, "/app/edit/" ++ application_name(Info)};
 		[OwnerData] ->
 			Referent = defaceit:get_referent_script_for(application_name(Info)),
 			ActiveReferent = defaceit:get_active_referent_script_for(Referent,  Req:header(referer)),

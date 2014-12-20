@@ -1,168 +1,107 @@
-2014-12-15 20:53:42.772 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
-2014-12-15 20:53:45.345 [info] <0.7.0> Application lager started on node edefaceit@lightcoders
-2014-12-15 20:53:45.515 [info] <0.7.0> Application crypto started on node edefaceit@lightcoders
-2014-12-15 20:53:45.646 [info] <0.7.0> Application mimetypes started on node edefaceit@lightcoders
-2014-12-15 20:53:45.966 [info] <0.95.0> Starting Boss in development mode....
-
-2014-12-15 20:53:46.106 [info] <0.95.0>@boss_db:start:77 Start Database Adapter boss_db_adapter_pgsql options [{adapter,pgsql},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_database,"edefaceit"},{db_password,"password"},{db_username,"postgres"},{db_host,"localhost"},{db_port,5432}]
-2014-12-15 20:53:46.504 [info] <0.95.0> Starting master services on edefaceit@lightcoders
-
-2014-12-15 20:53:46.690 [info] <0.7.0> Application tinymq started on node edefaceit@lightcoders
-2014-12-15 20:53:46.843 [info] <0.95.0> SSL:[]
-
-2014-12-15 20:53:46.971 [info] <0.95.0> Starting cowboy... on edefaceit@lightcoders
-
-2014-12-15 20:53:47.242 [info] <0.7.0> Application cowlib started on node edefaceit@lightcoders
-2014-12-15 20:53:47.328 [info] <0.7.0> Application ranch started on node edefaceit@lightcoders
-2014-12-15 20:53:47.479 [info] <0.7.0> Application cowboy started on node edefaceit@lightcoders
-2014-12-15 20:53:47.479 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
-
-2014-12-15 20:53:47.892 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application edefaceit
-2014-12-15 20:53:48.185 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  edefaceit_view_lib_tags
-2014-12-15 20:53:48.698 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/sal/development/edefaceit/priv/init/edefaceit_01_news.erl" with options [{include_dirs,["/home/sal/development/edefaceit/include"]}] 
-2014-12-15 20:54:21.842 [notice] <0.272.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
-2014-12-15 20:54:21.923 [warning] <0.6.0> lager_error_logger_h dropped 32 messages in the last second that exceeded the limit of 50 messages/sec
-2014-12-15 20:54:21.923 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
-2014-12-15 20:54:22.173 [notice] <0.272.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
-2014-12-15 20:54:22.173 [notice] <0.272.0>@boss_controller_adapter_pmod:action:92 Tokens []
-2014-12-15 20:54:22.832 [error] <0.272.0> GET /test [edefaceit] 404 0ms
-2014-12-15 20:55:29.686 [notice] <0.275.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
-2014-12-15 20:55:29.701 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
-2014-12-15 20:55:29.765 [notice] <0.275.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
-2014-12-15 20:55:29.765 [notice] <0.275.0>@boss_controller_adapter_pmod:action:92 Tokens []
-2014-12-15 20:55:29.785 [error] <0.275.0> GET /test [edefaceit] 404 0ms
-2014-12-15 20:55:29.863 [notice] <0.277.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
-2014-12-15 20:55:29.874 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
-2014-12-15 20:55:30.004 [notice] <0.277.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
-2014-12-15 20:55:30.004 [notice] <0.277.0>@boss_controller_adapter_pmod:action:92 Tokens []
-2014-12-15 20:55:30.009 [error] <0.277.0> GET /defaceit/test/test.js [edefaceit] 404 0ms
-2014-12-15 20:55:30.922 [notice] <0.279.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
-2014-12-15 20:55:30.934 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
-2014-12-15 20:55:30.976 [notice] <0.279.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
-2014-12-15 20:55:30.976 [notice] <0.279.0>@boss_controller_adapter_pmod:action:92 Tokens []
-2014-12-15 20:55:30.991 [error] <0.279.0> GET /test [edefaceit] 404 0ms
-2014-12-15 20:55:31.112 [notice] <0.281.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
-2014-12-15 20:55:31.119 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
-2014-12-15 20:55:31.170 [notice] <0.281.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
-2014-12-15 20:55:31.170 [notice] <0.281.0>@boss_controller_adapter_pmod:action:92 Tokens []
-2014-12-15 20:55:31.181 [error] <0.281.0> GET /defaceit/test/test.js [edefaceit] 404 0ms
-2014-12-15 22:06:17.087 [notice] <0.283.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
-2014-12-15 22:06:17.099 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
-2014-12-15 22:06:17.169 [notice] <0.283.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
-2014-12-15 22:06:17.169 [notice] <0.283.0>@boss_controller_adapter_pmod:action:92 Tokens []
-2014-12-15 22:06:17.178 [error] <0.283.0> POST /defaceit/test/develop/submit.html [edefaceit] 404 0ms
-2014-12-16 11:11:39.612 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:43.137 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:45.333 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:47.588 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:48.526 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:49.077 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:49.669 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:50.083 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:51.100 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:51.547 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:51.670 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:52.151 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:52.603 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:52.709 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:52.880 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:52.933 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:53.309 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:53.431 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:53.543 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:53.850 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:53.924 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:54.667 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:55.061 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:55.253 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:57.153 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:57.440 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:57.785 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:57.846 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:58.482 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:11:58.859 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:00.384 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:01.017 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:01.287 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:01.564 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:01.688 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:02.479 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:02.642 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:03.042 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:03.897 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:04.000 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:04.060 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:04.390 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:04.504 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:05.316 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:06.247 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:07.096 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:07.658 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:07.713 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:07.807 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:07.849 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:07.904 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:07.978 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.039 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.110 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.185 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.227 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.283 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.321 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.442 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.497 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.602 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.652 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.699 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:08.904 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:09.057 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:09.122 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:09.283 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:09.338 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:09.517 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:09.623 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:09.725 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:09.880 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:10.295 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:10.444 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:10.492 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:10.668 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:10.809 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:10.908 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:11.208 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:11.411 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:11.499 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:11.687 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:11.920 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:12.107 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:12.270 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:12.522 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:12.693 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:13.240 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:13.485 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:13.528 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:13.746 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:13.828 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:13.876 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:13.925 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:14.058 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:14.119 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:14.526 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:14.679 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:14.727 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:14.786 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:14.835 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:14.887 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:14.932 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:15.048 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:15.107 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:15.206 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:15.269 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:15.310 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:15.534 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:15.736 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:16.058 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:16.110 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:16.297 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:16.349 [error] <0.26.0> Can't load module that resides in sticky dir
-2014-12-16 11:12:16.410 [error] <0.26.0> Can't load module that resides in sticky dir
+2014-12-17 21:37:36.530 [notice] <0.289.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:37:36.542 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:37:36.633 [notice] <0.289.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:37:36.633 [notice] <0.289.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:37:36.655 [error] <0.289.0> GET /test [edefaceit] 404 0ms
+2014-12-17 21:37:37.410 [notice] <0.291.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:37:37.426 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:37:37.526 [notice] <0.291.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:37:37.526 [notice] <0.291.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:37:37.538 [error] <0.291.0> GET /defaceit/test/test.js [edefaceit] 404 0ms
+2014-12-17 21:40:37.579 [notice] <0.293.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:40:37.579 [notice] <0.294.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:40:37.581 [notice] <0.295.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:40:37.623 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:40:37.639 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:40:37.691 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:40:37.692 [notice] <0.298.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:40:37.693 [notice] <0.299.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 21:40:37.723 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:40:37.755 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 21:40:38.128 [notice] <0.293.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:40:38.128 [notice] <0.293.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:40:38.130 [notice] <0.294.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:40:38.130 [notice] <0.294.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:40:38.138 [notice] <0.295.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:40:38.138 [notice] <0.295.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:40:38.145 [error] <0.294.0> GET /calendar/images/ui-bg_glass_80_d7ebf9_1x400.png [edefaceit] 404 0ms
+2014-12-17 21:40:38.145 [error] <0.293.0> GET /calendar/images/ui-bg_glass_50_3baae3_1x400.png [edefaceit] 404 0ms
+2014-12-17 21:40:38.154 [error] <0.295.0> GET /calendar/images/ui-icons_3d80b3_256x240.png [edefaceit] 404 0ms
+2014-12-17 21:40:38.166 [notice] <0.298.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:40:38.166 [notice] <0.298.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:40:38.168 [notice] <0.299.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 21:40:38.168 [notice] <0.299.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 21:40:38.177 [error] <0.298.0> GET /calendar/images/ui-bg_highlight-soft_100_deedf7_1x100.png [edefaceit] 404 0ms
+2014-12-17 21:40:38.180 [error] <0.299.0> GET /calendar/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png [edefaceit] 404 0ms
+2014-12-17 22:15:30.508 [notice] <0.303.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 22:15:30.524 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 22:15:30.665 [notice] <0.303.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-12-17 22:15:30.665 [notice] <0.303.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 22:15:30.672 [error] <0.303.0> POST /defaceit/email/develop/submit.html [edefaceit] 404 0ms
+2014-12-17 23:33:11.481 [notice] <0.305.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 23:33:11.492 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 23:33:11.596 [notice] <0.305.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 23:33:11.596 [notice] <0.305.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 23:33:11.598 [error] <0.305.0> GET /defaceit/email/develop/main.htm [edefaceit] 404 0ms
+2014-12-17 23:33:19.947 [notice] <0.307.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 23:33:19.960 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 23:33:20.046 [notice] <0.307.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 23:33:20.046 [notice] <0.307.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 23:33:20.049 [error] <0.307.0> GET /defaceit/email/develop/main.htm [edefaceit] 404 0ms
+2014-12-17 23:40:28.141 [notice] <0.309.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 23:40:28.149 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 23:40:28.217 [notice] <0.309.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-12-17 23:40:28.217 [notice] <0.309.0>@boss_controller_adapter_pmod:action:92 Tokens ["email"]
+2014-12-17 23:40:28.370 [notice] <0.103.0>@boss_db_adapter_pgsql:save_record:131 Saving Record {page,id,"email",[37,51,67,33,68,79,67,84,89,80,69,37,50,48,104,116,109,108,37,51,69,10,37,51,67,104,116,109,108,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,104,101,97,100,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,109,101,116,97,37,50,48,99,104,97,114,115,101,116,37,51,68,37,50,50,117,116,102,45,56,37,50,50,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,109,101,116,97,37,50,48,104,116,116,112,45,101,113,117,105,118,37,51,68,37,50,50,88,45,85,65,45,67,111,109,112,97,116,105,98,108,101,37,50,50,37,50,48,99,111,110,116,101,110,116,37,51,68,37,50,50,73,69,37,51,68,101,100,103,101,37,50,67,99,104,114,111,109,101,37,51,68,49,37,50,50,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,116,105,116,108,101,37,51,69,37,51,67,37,50,70,116,105,116,108,101,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,109,101,116,97,37,50,48,110,97,109,101,37,51,68,37,50,50,100,101,115,99,114,105,112,116,105,111,110,37,50,50,37,50,48,99,111,110,116,101,110,116,37,51,68,37,50,50,37,50,50,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,109,101,116,97,37,50,48,110,97,109,101,37,51,68,37,50,50,118,105,101,119,112,111,114,116,37,50,50,37,50,48,99,111,110,116,101,110,116,37,51,68,37,50,50,119,105,100,116,104,37,51,68,100,101,118,105,99,101,45,119,105,100,116,104,37,50,50,37,51,69,10,10,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,115,99,114,105,112,116,37,50,48,116,121,112,101,37,51,68,37,50,50,116,101,120,116,37,50,70,106,97,118,97,115,99,114,105,112,116,37,50,50,37,50,48,115,114,99,37,51,68,37,50,50,104,116,116,112,37,51,65,37,50,70,37,50,70,115,97,110,100,98,111,120,46,100,101,102,97,99,101,105,116,46,114,117,37,50,70,100,101,102,97,99,101,105,116,37,50,70,116,111,111,108,115,46,106,115,37,50,50,37,51,69,37,51,67,37,50,70,115,99,114,105,112,116,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,10,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,115,99,114,105,112,116,37,50,48,116,121,112,101,37,51,68,37,50,50,116,101,120,116,37,50,70,106,97,118,97,115,99,114,105,112,116,37,50,50,37,50,48,115,114,99,37,51,68,37,50,50,104,116,116,112,37,51,65,37,50,70,37,50,70,115,97,110,100,98,111,120,46,100,101,102,97,99,101,105,116,46,114,117,37,50,70,106,115,37,50,70,99,111,100,101,109,105,114,114,111,114,46,106,115,37,50,50,37,51,69,37,51,67,37,50,70,115,99,114,105,112,116,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,115,99,114,105,112,116,37,50,48,116,121,112,101,37,51,68,37,50,50,116,101,120,116,37,50,70,106,97,118,97,115,99,114,105,112,116,37,50,50,37,50,48,115,114,99,37,51,68,37,50,50,104,116,116,112,37,51,65,37,50,70,37,50,70,115,97,110,100,98,111,120,46,100,101,102,97,99,101,105,116,46,114,117,37,50,70,106,115,37,50,70,109,111,100,101,37,50,70,106,97,118,97,115,99,114,105,112,116,46,106,115,37,50,50,37,51,69,37,51,67,37,50,70,115,99,114,105,112,116,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,115,99,114,105,112,116,37,50,48,116,121,112,101,37,51,68,37,50,50,116,101,120,116,37,50,70,106,97,118,97,115,99,114,105,112,116,37,50,50,37,50,48,115,114,99,37,51,68,37,50,50,104,116,116,112,37,51,65,37,50,70,37,50,70,115,97,110,100,98,111,120,46,100,101,102,97,99,101,105,116,46,114,117,37,50,70,106,115,37,50,70,109,111,100,101,37,50,70,120,109,108,46,106,115,37,50,50,37,51,69,37,51,67,37,50,70,115,99,114,105,112,116,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,115,99,114,105,112,116,37,50,48,116,121,112,101,37,51,68,37,50,50,116,101,120,116,37,50,70,106,97,118,97,115,99,114,105,112,116,37,50,50,37,50,48,115,114,99,37,51,68,37,50,50,104,116,116,112,37,51,65,37,50,70,37,50,70,115,97,110,100,98,111,120,46,100,101,102,97,99,101,105,116,46,114,117,37,50,70,106,115,37,50,70,109,111,100,101,37,50,...]}
+2014-12-17 23:40:28.436 [info] <0.309.0> POST /page/publish/email [edefaceit] 200 0ms
+2014-12-17 23:40:38.965 [notice] <0.311.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 23:40:38.980 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 23:40:39.057 [notice] <0.311.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 23:40:39.057 [notice] <0.311.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 23:40:39.269 [error] <0.311.0> GET /email [edefaceit] 404 0ms
+2014-12-17 23:41:14.587 [notice] <0.314.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 23:41:14.600 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 23:41:14.772 [notice] <0.314.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 23:41:14.772 [notice] <0.314.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 23:41:14.788 [error] <0.314.0> GET /email [edefaceit] 404 0ms
+2014-12-17 23:48:02.142 [notice] <0.316.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 23:48:02.153 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 23:48:02.197 [notice] <0.316.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-12-17 23:48:02.197 [notice] <0.316.0>@boss_controller_adapter_pmod:action:92 Tokens ["email"]
+2014-12-17 23:48:02.215 [notice] <0.103.0>@boss_db_adapter_pgsql:save_record:131 Saving Record {page,id,"email",[37,51,67,33,68,79,67,84,89,80,69,37,50,48,104,116,109,108,37,51,69,10,37,51,67,104,116,109,108,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,104,101,97,100,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,109,101,116,97,37,50,48,99,104,97,114,115,101,116,37,51,68,37,50,50,117,116,102,45,56,37,50,50,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,109,101,116,97,37,50,48,104,116,116,112,45,101,113,117,105,118,37,51,68,37,50,50,88,45,85,65,45,67,111,109,112,97,116,105,98,108,101,37,50,50,37,50,48,99,111,110,116,101,110,116,37,51,68,37,50,50,73,69,37,51,68,101,100,103,101,37,50,67,99,104,114,111,109,101,37,51,68,49,37,50,50,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,116,105,116,108,101,37,51,69,37,51,67,37,50,70,116,105,116,108,101,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,109,101,116,97,37,50,48,110,97,109,101,37,51,68,37,50,50,100,101,115,99,114,105,112,116,105,111,110,37,50,50,37,50,48,99,111,110,116,101,110,116,37,51,68,37,50,50,37,50,50,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,109,101,116,97,37,50,48,110,97,109,101,37,51,68,37,50,50,118,105,101,119,112,111,114,116,37,50,50,37,50,48,99,111,110,116,101,110,116,37,51,68,37,50,50,119,105,100,116,104,37,51,68,100,101,118,105,99,101,45,119,105,100,116,104,37,50,50,37,51,69,10,10,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,115,99,114,105,112,116,37,50,48,116,121,112,101,37,51,68,37,50,50,116,101,120,116,37,50,70,106,97,118,97,115,99,114,105,112,116,37,50,50,37,50,48,115,114,99,37,51,68,37,50,50,104,116,116,112,37,51,65,37,50,70,37,50,70,115,97,110,100,98,111,120,46,100,101,102,97,99,101,105,116,46,114,117,37,50,70,100,101,102,97,99,101,105,116,37,50,70,116,111,111,108,115,46,106,115,37,50,50,37,51,69,37,51,67,37,50,70,115,99,114,105,112,116,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,10,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,115,99,114,105,112,116,37,50,48,116,121,112,101,37,51,68,37,50,50,116,101,120,116,37,50,70,106,97,118,97,115,99,114,105,112,116,37,50,50,37,50,48,115,114,99,37,51,68,37,50,50,104,116,116,112,37,51,65,37,50,70,37,50,70,115,97,110,100,98,111,120,46,100,101,102,97,99,101,105,116,46,114,117,37,50,70,106,115,37,50,70,99,111,100,101,109,105,114,114,111,114,46,106,115,37,50,50,37,51,69,37,51,67,37,50,70,115,99,114,105,112,116,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,115,99,114,105,112,116,37,50,48,116,121,112,101,37,51,68,37,50,50,116,101,120,116,37,50,70,106,97,118,97,115,99,114,105,112,116,37,50,50,37,50,48,115,114,99,37,51,68,37,50,50,104,116,116,112,37,51,65,37,50,70,37,50,70,115,97,110,100,98,111,120,46,100,101,102,97,99,101,105,116,46,114,117,37,50,70,106,115,37,50,70,109,111,100,101,37,50,70,106,97,118,97,115,99,114,105,112,116,46,106,115,37,50,50,37,51,69,37,51,67,37,50,70,115,99,114,105,112,116,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,115,99,114,105,112,116,37,50,48,116,121,112,101,37,51,68,37,50,50,116,101,120,116,37,50,70,106,97,118,97,115,99,114,105,112,116,37,50,50,37,50,48,115,114,99,37,51,68,37,50,50,104,116,116,112,37,51,65,37,50,70,37,50,70,115,97,110,100,98,111,120,46,100,101,102,97,99,101,105,116,46,114,117,37,50,70,106,115,37,50,70,109,111,100,101,37,50,70,120,109,108,46,106,115,37,50,50,37,51,69,37,51,67,37,50,70,115,99,114,105,112,116,37,51,69,10,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,50,48,37,51,67,115,99,114,105,112,116,37,50,48,116,121,112,101,37,51,68,37,50,50,116,101,120,116,37,50,70,106,97,118,97,115,99,114,105,112,116,37,50,50,37,50,48,115,114,99,37,51,68,37,50,50,104,116,116,112,37,51,65,37,50,70,37,50,70,115,97,110,100,98,111,120,46,100,101,102,97,99,101,105,116,46,114,117,37,50,70,106,115,37,50,70,109,111,100,101,37,50,...]}
+2014-12-17 23:48:02.228 [info] <0.316.0> POST /page/publish/email [edefaceit] 200 0ms
+2014-12-17 23:48:32.448 [notice] <0.318.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 23:48:32.459 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 23:48:32.495 [notice] <0.318.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 23:48:32.495 [notice] <0.318.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 23:48:32.517 [error] <0.318.0> GET /email [edefaceit] 404 0ms
+2014-12-17 23:48:55.030 [notice] <0.320.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 23:48:55.041 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 23:48:55.088 [notice] <0.320.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 23:48:55.088 [notice] <0.320.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 23:48:55.101 [error] <0.320.0> GET /email [edefaceit] 404 0ms
+2014-12-17 23:49:19.863 [notice] <0.322.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 23:49:19.874 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 23:49:19.927 [notice] <0.322.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 23:49:19.927 [notice] <0.322.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 23:49:19.940 [error] <0.322.0> GET /email [edefaceit] 404 0ms
+2014-12-17 23:52:50.088 [notice] <0.324.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-17 23:52:50.098 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-17 23:52:50.145 [notice] <0.324.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-17 23:52:50.145 [notice] <0.324.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-17 23:52:50.155 [error] <0.324.0> GET /email [edefaceit] 404 0ms
+2014-12-18 08:51:37.286 [notice] <0.326.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-18 08:51:37.307 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-18 08:51:37.370 [notice] <0.326.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-18 08:51:37.370 [notice] <0.326.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-18 08:51:37.388 [error] <0.326.0> GET /email [edefaceit] 404 0ms
+2014-12-18 08:53:38.384 [notice] <0.328.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-18 08:53:38.397 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-18 08:53:38.484 [notice] <0.328.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-18 08:53:38.484 [notice] <0.328.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-18 08:53:38.500 [error] <0.328.0> GET /email [edefaceit] 404 0ms
+2014-12-18 08:53:48.905 [notice] <0.330.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath edefaceit
+2014-12-18 08:53:48.909 [info] <0.266.0> Loading routes from "/home/sal/development/edefaceit/priv/edefaceit.routes" ....
+2014-12-18 08:53:48.962 [notice] <0.330.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-12-18 08:53:48.962 [notice] <0.330.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-12-18 08:53:48.973 [error] <0.330.0> GET /email [edefaceit] 404 0ms

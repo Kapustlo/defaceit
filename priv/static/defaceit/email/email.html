@@ -38,6 +38,62 @@
             <script>window.html5 || document.write('<script src="http://sandbox.defaceit.ru/themes/awesome/js/html5shiv.js"><\/script>')</script>
         <![endif]-->
 
+
+<script id="main_tpl" type="text/x-jquery-tmpl">
+<form class='fancy-form'>
+    <div class="controls controls-row hide-me">
+      <input  id="input-email" class="span5" type="text" name="email" value="your@email.com" placeholder="your@email.com">
+      <button id="submit-email" class="span2 btn btn-fancy" type="submit">Добавить</button>
+    </div>                        
+    <div id="resp" class="center-child"></div> 
+</form>
+<div class="well" id="error"></div> 
+<div id="share"> 
+    <ul class="icons">
+        <li class="share-button">
+            <a href="http://twitter.com"><i class="icon-twitter-sign"></i></a></li>
+        <li class="share-button">
+            <a href="http://facebook.com"><i class="icon-facebook-sign"></i></a></li>
+        <li class="share-button">
+            <a href="http://plus.google.com"><i class="icon-google-plus-sign"></i></a></li>
+    </ul>                        
+    <a class='muted pull-right' href="mailto:hello@example.com">Дополнительные настройки</a>
+</div>
+</script>
+
+
+
+<script id="register_email_tpl" type="text/x-jquery-tmpl">
+<form class='fancy-form'>
+    <div class="controls controls-row hide-me">
+      <textarea id="message" class="span7" rows="8"><a href="http://defaceit.ru/email/[[ hash ]]">Обратная связь</a></textarea>
+    </div>
+    <div class="controls controls-row hide-me">
+      <button id="submit-email" class="span7 btn btn-fancy" type="button">Отправить тестовое сообщение</button>
+    </div>
+    <div id="resp" class="center-child"></div> 
+</form>
+<div class="well" id="error"></div> 
+</script>
+
+
+<script id="sendform_tpl" type="text/x-jquery-tmpl">
+<form class='fancy-form'>
+    <div class="controls controls-row hide-me">
+      <input  id="input-email" class="span5" type="text" name="email" value="your@email.com" placeholder="your@email.com">
+      <button id="submit-email" class="span2 btn btn-fancy" type="button">Отправить</button>
+    </div>   
+    <div class="controls controls-row hide-me">
+       <input  id="subject" class="span7" type="text" name="email" value="Тема сообщения" placeholder="Тема сообщения">
+    </div>
+    <div class="controls controls-row hide-me">
+      <textarea id="message" class="span7" rows="8"></textarea>
+    </div>
+    <div id="resp" class="center-child"></div> 
+</form>
+<div class="well" id="error"></div> 
+</script>
+
 <!--Ignore-->
 <script id="default_tpl" type="text/x-jquery-tmpl"><!--<script id="[[ action ]]_tpl" type="text/x-jquery-tmpl">
 <form class='fancy-form'>
@@ -57,12 +113,12 @@
         <li class="share-button">
             <a href="http://plus.google.com"><i class="icon-google-plus-sign"></i></a></li>
     </ul>                        
-    <a class='muted pull-right' href="mailto:hello@example.com">hello@example.com</a>
+    <a class='muted pull-right' href="mailto:hello@example.com">Дополнительные настройки</a>
 </div>
 </script>
 
 <script>
-Defaceit.App.test.[[ action ]] = function(){
+Defaceit.App.email.[[ action ]] = function(){
 var launchPage = {
     url: 'submit.html',
     sent: false,
@@ -131,12 +187,12 @@ $(document).ready( function() {
     <body>
         <div class="container">
             <header class="launch-head">
-                <h1>Awesome</h1>
-                <h2>Jump aboard the hype train.</h2> 
+                <h1>Обратная связь</h1>
+                <h2>Самый простой способ наладить контакт с вашими посетителями</h2> 
             </header>
 
             <section id="signup-sect"> 
-                <p>We'll be launching soon. Try entering a valid email address to see the animations.</p> 
+                <p>Введите адрес вашей электронной почты и получите ссылку обратной связи</p> 
                 <div class="flex-container">
                   
                 </div>
@@ -144,21 +200,21 @@ $(document).ready( function() {
 
             <section id="info" class="row">
                 <div class="span4">
-                    <h3>Super</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <h3>Шаг 1</h3>
+                    <p>Впервую очередь необходимо зарегистрировать почтовый адрес на который будут приходить сообщения от ваших посетителей.</p>
                 </div>
                 <div class="span4">
-                    <h3>Awesome</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <h3>Шаг 2</h3>
+                    <p>После того как электронная почта будет заведена необходимо проверить доставку сообщений на введенный электронный адрес.</p>
                </div>
                 <div class="span4">
-                    <h3>Launch</h3>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <h3>Шаг 3</h3>
+                    <p>После успешной проверки электронного адреса необходимо разместить ссылку на форму обратной связи на вашем сайте.</p>
                 </div>
             </section>
 
             <footer id="pagefooter">
-                <p class="pull-right">©2012 Awesome Launch</p>
+                <p class="pull-right">©2014 Defaceit.ru</p>
             </footer>
         </div> <!-- /container -->
 
@@ -167,15 +223,20 @@ $(document).ready( function() {
 
         <script src="http://sandbox.defaceit.ru/themes/awesome/js/bootstrap.min.js"></script>
  
+
+<!--Ignore-->
     <script>
         Defaceit.Config = Defaceit.Config || {};
-        Defaceit.Config.test = {
-            start_action: 'main'
+        Defaceit.Config.email = {
+            start_action: "main"
         };
     </script>
-<!--Ignore-->
-    <script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/test/develop/test.js"></script>
-    <script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/test/develop/develop.js"></script>
+
+    <script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/email/develop/email.js"></script>
+    <script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/email/develop/templates/main.js"></script>
+    <script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/email/develop/templates/register_email.js"></script>
+    <script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/email/develop/templates/sendform.js"></script>
+    <script type="text/javascript" src="http://sandbox.defaceit.ru/defaceit/email/develop/develop.js"></script>
 <!--EndIgnore-->
     <!--%%
     <script src="{{ owner.url }}"></script>

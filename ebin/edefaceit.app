@@ -9,7 +9,8 @@
           edefaceit_custom_tags,edefaceit_view_lib_tags,
           edefaceit_view_page_list_html,edefaceit_view_page_create_html,
           edefaceit_view_page_content_html,edefaceit_view_main_index_html,
-          edefaceit_view_hello_lost_html,edefaceit_view_app_edit_html]},
+          edefaceit_view_main_i_html,edefaceit_view_hello_lost_html,
+          edefaceit_view_app_edit_html]},
      {registered,[]},
      {applications,[kernel,stdlib,crypto]},
      {env,
@@ -29,5 +30,6 @@
           {view_modules,
               [edefaceit_view_page_list_html,edefaceit_view_page_create_html,
                edefaceit_view_page_content_html,
-               edefaceit_view_main_index_html,edefaceit_view_hello_lost_html,
+               edefaceit_view_main_index_html,edefaceit_view_main_i_html,
+               edefaceit_view_hello_lost_html,
                edefaceit_view_app_edit_html]}]}]}.

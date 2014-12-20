@@ -3,7 +3,7 @@
 
 
 index(Get, [])->
-    {output, "Application page"}.
+    {redirect, "/"}.
     
 content(Get, [])->
     {redirect,"/page"};

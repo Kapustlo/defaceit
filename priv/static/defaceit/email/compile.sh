@@ -1,18 +1,15 @@
 #!/bin/bash
 
-tr -d '\r\n' < ../../css/ext-all.css > temp.css
-sed -i 's/^M//g' temp.css
-sed -i "s/'/\\\\'/g" temp.css
-sed -i 's/"/\\"/g' temp.css
+JS_DEF_DIR=/home/sal/development/edefaceit/priv/static/defaceit
+JS_DEF_PROJECT_DIR=$JS_DEF_DIR/email
+JS_TPL=`find ./develop/templates -type f \( -name '*.js' \)`
 
 
+java -jar /home/sal/app/closure/compiler.jar --js \
+$JS_DEF_DIR/tools.js \
+$JS_DEF_PROJECT_DIR/develop/email.js \
+$JS_TPL \
+--js_output_file $JS_DEF_PROJECT_DIR/email.js
 
-echo "\$('<style>" > 1.js
-cat temp.css >> 1.js
-echo "</style>').appendTo('head');" >> 1.js
-tr -d '\n' < 1.js > ./develop/css.js
-
-rm 1.js
-rm temp.css
-
-java -jar /vagrant/compiler.jar --js /vagrant/development/edefaceit/priv/static/defaceit/tools.js /vagrant/development/edefaceit/priv/static/js/ext-base.js /vagrant/development/edefaceit/priv/static/js/ext-all.js /vagrant/development/edefaceit/priv/static/defaceit/email/develop/email.js --js_output_file /vagrant/development/edefaceit/priv/static/defaceit/email/email.js
+cp develop/main.html email.html
+php ~/pub.php email.html
