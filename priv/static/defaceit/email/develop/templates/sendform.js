@@ -30,7 +30,7 @@ Defaceit.App.email.sendform = function(){
     
     sender = new Snappy.data.IFrameProxy("http://services.defaceit.ru/email/send_message");
     form_fields = {
-      'from':'esergeev777@yandex.ru',
+      'from':jQuery('#input-email').val(),
       'title': jQuery('#subject').val(),
       'message': jQuery('#message').val(),
       'email_hash':Defaceit.App.email.hash

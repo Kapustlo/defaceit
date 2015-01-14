@@ -1,6 +1,6 @@
 jQuery(function(){
         commentsQueue = "comments." + Defaceit.Page.name + '.' + Defaceit.Page.namespace;
-        Defaceit.Page.urlTemplate = 'http://defaceit.ru/page/content/{{pageName}}';
+        Defaceit.Page.urlTemplate = 'http://sandbox.defaceit.ru/page/content/{{pageName}}';
 
         jQuery(".add-comment").click(
                 function(){

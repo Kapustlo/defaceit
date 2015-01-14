@@ -1,58 +1,18 @@
-2014-12-20 10:07:04 =SUPERVISOR REPORT====
+2015-01-06 00:00:22 =SUPERVISOR REPORT====
      Supervisor: {<0.115.0>,poolboy_sup}
      Context:    shutdown_error
      Reason:     shutdown
      Offender:   [{nb_children,1},{name,boss_session_controller},{mfargs,{boss_session_controller,start_link,[[{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,40},{adapter,boss_session_adapter_mock},{session_exp_time,525600},{session_key,"_boss_session"}]]}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
 
-2014-12-20 10:07:19 =ERROR REPORT====
-Error in process <0.263.0> on node 'edefaceit@lightcoders' with exit value: {{badmatch,false},[{cowboy_router,execute,2,[{file,"src/cowboy_router.erl"},{line,170}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]}
-
-2014-12-20 10:07:19 =ERROR REPORT====
-Ranch listener boss_http_listener had connection process started with cowboy_protocol:start_link/4 at <0.263.0> exit with reason: {{badmatch,false},[{cowboy_router,execute,2,[{file,"src/cowboy_router.erl"},{line,170}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]}
-2014-12-20 10:07:20 =ERROR REPORT====
-Error in process <0.267.0> on node 'edefaceit@lightcoders' with exit value: {{badmatch,false},[{cowboy_router,execute,2,[{file,"src/cowboy_router.erl"},{line,170}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]}
-
-2014-12-20 10:07:20 =ERROR REPORT====
-Ranch listener boss_http_listener had connection process started with cowboy_protocol:start_link/4 at <0.267.0> exit with reason: {{badmatch,false},[{cowboy_router,execute,2,[{file,"src/cowboy_router.erl"},{line,170}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]}
-2014-12-20 12:04:19 =SUPERVISOR REPORT====
+2015-01-06 00:41:41 =SUPERVISOR REPORT====
      Supervisor: {<0.115.0>,poolboy_sup}
      Context:    shutdown_error
      Reason:     shutdown
      Offender:   [{nb_children,1},{name,boss_session_controller},{mfargs,{boss_session_controller,start_link,[[{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,40},{adapter,boss_session_adapter_mock},{session_exp_time,525600},{session_key,"_boss_session"}]]}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
 
-2014-12-20 12:15:48 =ERROR REPORT====
-GET /sfsfs [edefaceit] 404 0ms2014-12-20 12:15:59 =ERROR REPORT====
-GET /sfsfs [edefaceit] 404 0ms2014-12-20 12:16:00 =ERROR REPORT====
-GET /sfsfs [edefaceit] 404 0ms2014-12-20 19:50:43 =ERROR REPORT====
-GET /psadasd [edefaceit] 404 0ms2014-12-20 19:51:39 =ERROR REPORT====
-GET /psadasd [edefaceit] 404 0ms2014-12-20 19:51:40 =ERROR REPORT====
-GET /psadasd [edefaceit] 404 0ms2014-12-20 19:51:45 =ERROR REPORT====
-GET /psadasd [edefaceit] 404 0ms2014-12-20 19:51:55 =ERROR REPORT====
-GET /psadasd [edefaceit] 404 0ms2014-12-20 19:53:50 =ERROR REPORT====
-GET /sdfsdfsadfsd [edefaceit] 404 0ms2014-12-20 19:58:30 =ERROR REPORT====
-GET /email [edefaceit] 404 0ms2014-12-20 19:59:36 =ERROR REPORT====
-GET /email [edefaceit] 404 0ms2014-12-20 20:10:39 =ERROR REPORT====
-GET /email [edefaceit] 404 0ms2014-12-20 20:16:48 =SUPERVISOR REPORT====
+2015-01-08 16:35:49 =SUPERVISOR REPORT====
      Supervisor: {<0.115.0>,poolboy_sup}
      Context:    shutdown_error
      Reason:     shutdown
      Offender:   [{nb_children,1},{name,boss_session_controller},{mfargs,{boss_session_controller,start_link,[[{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,40},{adapter,boss_session_adapter_mock},{session_exp_time,525600},{session_key,"_boss_session"}]]}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
 
-2014-12-20 20:17:17 =ERROR REPORT====
-GET /email [edefaceit] 404 0ms2014-12-20 20:17:57 =ERROR REPORT====
-GET /email [edefaceit] 404 0ms2014-12-20 20:18:45 =ERROR REPORT====
-GET /email/10e93ef6b8b4423d75cfb504529af8dd [edefaceit] 404 0ms2014-12-20 20:19:03 =ERROR REPORT====
-GET /email [edefaceit] 404 0ms2014-12-20 20:19:31 =ERROR REPORT====
-GET /baloons [edefaceit] 404 0ms2014-12-20 20:19:35 =ERROR REPORT====
-GET /baloons/asdasd [edefaceit] 404 0ms2014-12-20 20:19:58 =ERROR REPORT====
-GET /baloon [edefaceit] 404 0ms2014-12-20 20:20:03 =ERROR REPORT====
-GET /baloon [edefaceit] 404 0ms2014-12-20 20:20:19 =ERROR REPORT====
-GET /babycalc [edefaceit] 404 0ms2014-12-20 20:20:23 =ERROR REPORT====
-GET /babycalc [edefaceit] 404 0ms2014-12-20 20:20:47 =ERROR REPORT====
-GET /babycalc [edefaceit] 404 0ms2014-12-20 20:21:25 =ERROR REPORT====
-GET /babycalc [edefaceit] 404 0ms2014-12-20 20:21:38 =ERROR REPORT====
-GET /babycalc [edefaceit] 404 0ms2014-12-20 20:22:06 =ERROR REPORT====
-GET /email [edefaceit] 404 0ms2014-12-20 20:22:23 =ERROR REPORT====
-GET /babycalc [edefaceit] 404 0ms2014-12-20 20:32:18 =ERROR REPORT====
-GET /email [edefaceit] 404 0ms2014-12-20 20:32:21 =ERROR REPORT====
-GET /baloon/%D0%9F%D1%80%D0%B8%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B%20%D1%83%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BF%D0%BE%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F [edefaceit] 404 0ms

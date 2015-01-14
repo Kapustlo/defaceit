@@ -7,9 +7,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-
+<!--Ignore-->
         <script type="text/javascript" src="http://defaceit.ru/defaceit/tools.js"></script>
     
+
 
         <script type="text/javascript" src="http://defaceit.ru/js/codemirror.js"></script>
         <script type="text/javascript" src="http://defaceit.ru/js/mode/javascript.js"></script>
@@ -19,6 +20,8 @@
 
         <link rel="stylesheet" href="http://defaceit.ru/css/codemirror.css">
         <link rel="stylesheet" href="http://defaceit.ru/css/solarized.css">
+<!--EndIgnore-->
+
         <link rel="stylesheet" href="http://defaceit.ru/defaceit/tools/css/defaceit.css">
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -57,10 +60,31 @@
         <li class="share-button">
             <a href="http://plus.google.com"><i class="icon-google-plus-sign"></i></a></li>
     </ul>                        
-    <a class='muted pull-right' href="mailto:hello@example.com">Дополнительные настройки</a>
+    <!--<a class='muted pull-right' href="mailto:hello@example.com">Дополнительные настройки</a>-->
 </div>
 </script>
 
+
+<script id="info_tpl" type="text/x-jquery-tmpl">
+<div class="span4">
+    <h3>Шаг 1</h3>
+    <p>Укажите электронный почтовый ящик на который вы хотите получать сообщения (не виден посетителям)</p>
+</div>
+<div class="span4">
+    <h3>Шаг 2</h3>
+    <p>Получите html-код для вставки на страницу вашего сайта.</p>
+</div>
+<div class="span4">
+    <h3>Шаг 3</h3>
+    <p>Разместите полученный код на вашем сайте и проверьте работу формы обратной связи.</p>
+</div>
+
+</script>
+
+
+<script id="launch-head_tpl" type="text/x-jquery-tmpl">
+<h2>Настройте форму обратной связи для сайта</h2> 
+</script>                
 
 
 <script id="register_email_tpl" type="text/x-jquery-tmpl">
@@ -80,8 +104,7 @@
 <script id="sendform_tpl" type="text/x-jquery-tmpl">
 <form class='fancy-form'>
     <div class="controls controls-row hide-me">
-      <input  id="input-email" class="span5" type="text" name="email" value="your@email.com" placeholder="your@email.com">
-      <button id="submit-email" class="span2 btn btn-fancy" type="button">Отправить</button>
+      <input  id="input-email" class="span7" type="text" name="email" value="your@email.com" placeholder="your@email.com">
     </div>   
     <div class="controls controls-row hide-me">
        <input  id="subject" class="span7" type="text" name="email" value="Тема сообщения" placeholder="Тема сообщения">
@@ -89,6 +112,11 @@
     <div class="controls controls-row hide-me">
       <textarea id="message" class="span7" rows="8"></textarea>
     </div>
+    <div class="controls controls-row hide-me">
+        <div class="span2">&nbsp;</div>
+        <button id="submit-email" class="span2 btn btn-fancy" type="button">Отправить</button>
+    </div>
+
     <div id="resp" class="center-child"></div> 
 </form>
 <div class="well" id="error"></div> 
@@ -186,34 +214,17 @@ $(document).ready( function() {
     </head>
     <body>
         <div class="container">
-            <header class="launch-head">
-                <h1>Обратная связь</h1>
-                <h2>Самый простой способ наладить контакт с вашими посетителями</h2> 
-            </header>
+            <header class="launch-head"></header>
 
             <section id="signup-sect"> 
-                <p>Введите адрес вашей электронной почты и получите ссылку обратной связи</p> 
+                <p><!--Введите адрес вашей электронной почты и получите ссылку обратной связи--></p>
                 <div class="flex-container">
-                  
+                  <h1>Загрузка...</h1>
                 </div>
             </section>
+            <section id="info" class="row"></section>
 
-            <section id="info" class="row">
-                <div class="span4">
-                    <h3>Шаг 1</h3>
-                    <p>Впервую очередь необходимо зарегистрировать почтовый адрес на который будут приходить сообщения от ваших посетителей.</p>
-                </div>
-                <div class="span4">
-                    <h3>Шаг 2</h3>
-                    <p>После того как электронная почта будет заведена необходимо проверить доставку сообщений на введенный электронный адрес.</p>
-               </div>
-                <div class="span4">
-                    <h3>Шаг 3</h3>
-                    <p>После успешной проверки электронного адреса необходимо разместить ссылку на форму обратной связи на вашем сайте.</p>
-                </div>
-            </section>
-
-            <footer id="pagefooter">
+            <footer id="pagefooter" class='navbar-fixed-bottom'>
                 <p class="pull-right">©2014 Defaceit.ru</p>
             </footer>
         </div> <!-- /container -->

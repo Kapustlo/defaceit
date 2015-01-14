@@ -6,6 +6,9 @@ var launchPage = {
 }
 $(document).ready( function() {
     $('.flex-container').html($('#main_tpl').html());
+    $('#info').html($('#info_tpl').html());
+    $('.launch-head').html($('#launch-head_tpl').html());
+
 
     $('#input-email').bind({
         focus: function(){
