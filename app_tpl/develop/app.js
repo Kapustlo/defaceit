@@ -8,7 +8,7 @@ Defaceit.App.{{app_class}} = _.extend({
   app: '{{appid}}.ru',
   appShortName: '{{appid}}',
   version:'0.1',
-  
+
   debug: function(){
     // Debug is off
   },
@@ -20,10 +20,10 @@ Defaceit.App.{{app_class}} = _.extend({
   exec: function(action){
 
     this.debug('Получено событие:'+action);
-    
+
     if(this[action] === undefined){
         this[action] = function(){Defaceit.Helpers.edit(action)};
-
+        `id:${action}.template.${this.app}`
         var template = new Defaceit.VariableModel({'id':action+'.template.'+this.app});
         template.on('sync', function(){jQuery(this.get('data')).appendTo('head'); Defaceit.App.{{app_class}}[action]()}, template);
         template.fetch();
@@ -36,8 +36,4 @@ Defaceit.App.{{app_class}} = _.extend({
 
 Defaceit.App.{{app_class}}.on('exec', Defaceit.App.{{app_class}}.exec, Defaceit.App.{{app_class}});
 
-if(Defaceit.Config.{{app_class}} && Defaceit.Config.{{app_class}}.start_action){
-    Defaceit.App.{{app_class}}.trigger('exec', Defaceit.Config.{{app_class}}.start_action);
-}else{
-    Defaceit.App.{{app_class}}.trigger('exec', 'main');
-}
+Defaceit.Config.{{app_class}} && Defaceit.Config.{{app_class}}.start_action ? Defaceit.App.{{app_class}}.trigger('exec', Defaceit.Config.{{app_class}}.start_action) : Defaceit.App.{{app_class}}.trigger('exec', 'main');
